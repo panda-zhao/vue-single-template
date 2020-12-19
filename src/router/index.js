@@ -12,11 +12,23 @@ const routes = [
   // which is lazy-loaded when the route is visited.
   /* webpackChunkName: "about" */
   { path: '/about', name: 'About', component: () => import('@/views/About.vue') },
-  { path: '/test', name: 'test', component: () => import('@/views/test.vue') }
+  { path: '/test', name: 'test', component: () => import('@/views/test.vue') },
+  {
+    path: '/404',
+    component: () => import('@/views/error-page/404.vue'),
+    hidden: true
+  },
+  {
+    path: '/401',
+    component: () => import('@/views/error-page/404.vue'),
+    hidden: true
+  }
 ]
 
 const router = createRouter({
+  // mode: 'history', // require service support
   history: createWebHashHistory(),
+  scrollBehavior: () => ({ y: 0 }),
   routes
 })
 

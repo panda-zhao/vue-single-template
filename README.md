@@ -23,6 +23,27 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
+## 默认安装模块
+- 运行依赖(-S)
+  - axios
+  - clipboard（剪切板）
+  - vuex
+  - vue-router
+  - element-ui
+  - js-cookie（轻量级的处理cookies的js API）
+  - normalize.css （默认样式中跨浏览器一致性）
+  - echarts
+  - xlsx
+  - jszip
+  - file-saver
+
+- 开发依赖(-D)
+  - eslint 
+  - babel-eslint
+  - eslint-plugin-import
+  - eslint-plugin-vue
+  - sass
+  - sass-loader
 ## 功能
 - 全局功能
   - 国际化多语言
